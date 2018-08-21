@@ -3,11 +3,17 @@ This takes in a number that represents an amount of cents. It will calculate how
 that to the user. Uses 2 helper function: clear(), displayCoins()
 */
 function makeChange() {
+
+    var money = document.getElementById("change").value;//money is the number of cents that the user wrote in the text field
+
+    //Error Detection: if not a number, tell user that and then exit out of this function.
+    if(isNaN(money)) {
+        document.getElementById("main-content__input-coins-p").innerHTML = "That is not a valid number";
+        return;
+    }
+
     clear();//I first clear in case this function was used previously and there are previously results already displayed on the screen
 
-    var money;//money is the number of cents that the user wrote in the text field
-    money = document.getElementById("change").value;
-    
     //We need to display the number of each coin returned.
     var numLoonies = 0;
     var numQuarters = 0;
