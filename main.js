@@ -15,6 +15,7 @@ function makeChange() {
     var numNickels = 0;
     var numPennies = 0;
     
+    document.getElementById("main-content__input-coins-p").innerHTML = "For ".concat(money.toString()).concat(" cents, you'd need thse coins:")
 
     do {
         if(money >= 100) {
