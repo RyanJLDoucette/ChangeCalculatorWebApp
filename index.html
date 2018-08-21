@@ -10,18 +10,21 @@
 </head>
 <body>
     <div class="header">
-        <div class="header__content"><h1 class="center">Change Calculator</h1></div>
+        <div class="header__content">
+            <h1 class="center">Change Calculator</h1>
+            <h2 class="center">How much change do you have?</h2>
+            <input type="text" id="change" value="Enter the change here">
+            <button onclick="makeChange()">Make Change!</button>
+        </div>
     </div>
     <div class="site-main">
-        <div class="main-content">
-            <div class="main-content__change-form">
-                <h2 class="center">How much change do you have?</h2>
-                <input type="text" id="change" value="Enter the change here">
-                <button onclick="makeChange()">Make Change!</button>
-            </div>
-            <div class="main-content__display-change">
-                <p id="test"></p>
-            </div>
+        <div class="site-main__display-change">
+            <p class="center" id="main-content__input-coins-p">Enter the amount of coins that you need ...</p>
+            <div class="site-main__coin-label" id="1-cent-coin-block"><img src="Ressources/1c.png" alt="1 cent coin"><p class="center" id="1-cent-coin-p"></p></div>
+            <div class="site-main__coin-label" id="5-cent-coin-block"><img src="Ressources/5c.png" alt="5 cent coin"><p class="center" id="5-cent-coin-p"></p></div>
+            <div class="site-main__coin-label" id="10-cent-coin-block"><img src="Ressources/10c.png" alt="10 cent coin"><p class="center" id="10-cent-coin-p"></p></div>
+            <div class="site-main__coin-label" id="25-cent-coin-block"><img src="Ressources/25c.png" alt="25 cent coin"><p class="center" id="25-cent-coin-p"></p></div>
+            <div class="site-main__coin-label" id="100-cent-coin-block"><img src="Ressources/100c.png" alt="100 cent coin"><p class="center" id="100-cent-coin-p"></p></div>
         </div>
     </div>
 </body>

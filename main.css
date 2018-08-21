@@ -1,16 +1,17 @@
 body {
     background-color: whitesmoke;
-    
+    height: 90%;
 }
 
 .header {
-    height: 10%;
+    height: 25%;
     background-color: #0074D9;
 }
 
 .header__content {
+    overflow: hidden;
     height: 100%;
-    width: 70%;
+    width: 45%;
     margin-left: auto;
     margin-right: auto;
     padding-top: 12px;
@@ -19,34 +20,21 @@ body {
 .site-main {
     height: 85%;
     background-color: white;
+    position: relative;
 }
 
-.main-content {
+.site-main__display-change {
+    margin: 0;
     position: absolute;
-    left: 50%;
     top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-    width: 70%;
-    height: 50%;
 }
 
-.main-content__change-form {
-    width: 45%;
-    height: 100%;
+.site-main__coin-label {
     float: left;
-    margin: 20px;
-    border: 1px solid #0074D9;
-    border-radius: 25px;
-}
-
-.main-content__display-change {
-    width: 45%;
-    height: 100%;
-    float:left;
-    margin: 20px;
-    background-color: #0074D9;
-    border: 1px solid white;
-    border-radius: 25px;
+    display: none;
 }
 
 h1 {
@@ -57,40 +45,49 @@ h1 {
 
 h2 {
     font-family: 'Arial';
-    color: #0074D9;
-    font-size: 30px;
-    margin-top: 125px;
-    margin-bottom: 25px;
-}
-
-form {
-    display: inline;
+    color: white;
+    font-size: 20px;
 }
 
 input {
-    width: 75%;
-    height: 12%;
-    margin-right: 15px;
-    margin-left: 25px;
+    width: 22%;
+    height: 20%;
+    margin-left: 267px;
     text-align: center;
     font-family: 'Arial';
     color: #0074D9;
     border: 1px solid #0074D9;
-    border-radius: 5px;
-
+    border-radius: 8px;
 }
 
 button {
-    border: 1px solid #0074D9;
-    background-color: white;
-    border-radius: 30px;
-    color: #0074D9;
-    height: 50px;
-    width: 14%;
+    background-color: #F15B2D;
+    border-radius: 8px;
+    color: white;
+    height: 20%;
+    width: 15%;
     font-family: 'Arial';
     font-weight: bold;
 }
 
+p {
+    font-family: 'Arial';
+    color: #0074D9;
+    font-size: 15px;
+    font-weight: bold;
+    margin-bottom: 100px;
+}
+
+.site-main__coin-label p {
+    color: #F15B2D;
+}
+
 .center {
     text-align: center;
+}
+
+img {
+    height: 100px;
+    width: 100px;
+    margin: 25px;
 }
